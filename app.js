@@ -590,7 +590,7 @@
       return renderTopParticipantsLeaderboard(session, topParticipants);
     }
     if (session.aiReviewPending) {
-      return `<section class="ai-review-pending panel"><p class="panel-kicker">${session.kind === "true_false" ? "ĐÚNG / SAI VÀ GIẢI THÍCH" : "BÀI TỰ LUẬN"}</p><h3>Chưa công bố vinh danh</h3><p>${session.kind === "true_false" ? "Đang chờ chấm các lời giải thích theo căn cứ giáo viên." : "Đang chờ chấm các ý theo đáp án tham chiếu."} Bảng xếp hạng chỉ xuất hiện khi các bài trong phiên đã được chấm xong.</p></section>`;
+      return `<section class="ai-review-pending panel"><p class="panel-kicker">${session.kind === "true_false" ? "ĐÚNG / SAI VÀ GIẢI THÍCH" : "BÀI TỰ LUẬN"}</p><h3>Chưa công bố vinh danh</h3><p>${session.kind === "true_false" ? "Đang chờ chấm các lời giải thích theo căn cứ giáo viên." : "Đang chờ chấm các ý theo đáp án tham chiếu."} ${session.kind === "true_false" ? `Chỉ chấm AI nhóm Top 10 theo lựa chọn và tất cả bài đồng điểm ở ngưỡng: ${session.aiCandidateCount || 0} bài, còn ${session.reviewPending || 0} bài chờ chấm. Bài ngoài nhóm không cần chấm AI.` : "Bảng xếp hạng xuất hiện khi các bài đã chấm xong."}</p></section>`;
     }
     const leaders = session.leaderboard || [];
     if (!leaders.length) return "";
@@ -603,7 +603,7 @@
   function renderTopParticipantsLeaderboard(session, participants, presentation = false) {
     const label = participants.length === 1 ? "Top 1" : `Top ${participants.length}`;
     const isQuiz = session.kind === "quiz" || session.kind === "true_false";
-    const methodNote = session.kind === "true_false" ? "Xếp theo số lựa chọn đúng, rồi số giải thích đạt, cuối cùng là thời gian" : isQuiz ? "Xếp theo số câu đúng, rồi thời gian hoàn thành" : session.kind === "ordering" ? "Xếp theo số bước đúng vị trí, rồi thời gian hoàn thành" : "Xếp theo số ý đúng, rồi thời gian hoàn thành";
+    const methodNote = session.kind === "true_false" ? "AI chấm nhóm Top 10 theo lựa chọn và tất cả bài đồng điểm ở ngưỡng; xếp theo lựa chọn đúng, giải thích đạt, rồi thời gian" : isQuiz ? "Xếp theo số câu đúng, rồi thời gian hoàn thành" : session.kind === "ordering" ? "Xếp theo số bước đúng vị trí, rồi thời gian hoàn thành" : "Xếp theo số ý đúng, rồi thời gian hoàn thành";
     const featured = participants.slice(0, 3);
     const remaining = participants.slice(3);
 
