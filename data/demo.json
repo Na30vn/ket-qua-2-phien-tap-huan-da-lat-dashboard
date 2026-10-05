@@ -1,0 +1,637 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-05T04:00:00Z",
+  "sessions": [
+    {
+      "id": 1,
+      "name": "Phiên 1",
+      "description": "Quản trị tài chính, kế toán tại đơn vị sau sáp nhập",
+      "kind": "quiz",
+      "typeLabel": "Trắc nghiệm 10 câu",
+      "phase": "NOT_STARTED",
+      "totalResponses": 0,
+      "currentResponses": 0,
+      "participatingUnits": 0,
+      "totalUnits": 78,
+      "missingUnits": [
+        "TRUNG TÂM PHÁT TRIỂN HẠ TẦNG TRỰC THUỘC BAN QUẢN LÝ KHU KINH TẾ MỞ CHU LAI THÀNH PHỐ ĐÀ NẴNG",
+        "Trung Tâm Khoa học công nghệ và đổi mới sáng tạo tỉnh Lào Cai",
+        "Bệnh viện Hữu nghị Việt Đức",
+        "TRUNG TÂM QUẢN LÝ NHÀ TỈNH LÂM ĐỒNG",
+        "TRUNG TÂM VĂN HÓA TỈNH CÀ MAU",
+        "Trường Tiểu học và Trung học cơ sở Lê Duẩn",
+        "Trường Trung học cơ sở Châu Kim Huệ",
+        "Trường Trung học phổ thông Võ Thị Sáu",
+        "Trường Tiểu học và Trung học cơ sở Tuy An Bắc",
+        "Trường Tiểu học Tuy An Bắc",
+        "Trường Mầm non Tuy An Bắc",
+        "Trường Tiểu học Ô Loan",
+        "Trường Tiểu học và Trung học cơ sở Trần Rịa",
+        "Trường Mầm non Ô Loan",
+        "Trường Tiểu Học An Hòa",
+        "Phòng Kinh tế đặc khu Côn Đảo",
+        "Trường Tiểu học Nguyễn Thị Loan",
+        "Trung tâm đăng kiểm xe cơ giới",
+        "TRƯỜNG MẪU GIÁO HOA CÚC",
+        "TRƯỜNG MẪU GIÁO HOA BAN",
+        "TRẠM Y TẾ XÃ CAM HIỆP",
+        "TRƯỜNG THCS VÀ THPT BÁC ÁI",
+        "Trạm Y tế xã Cam Lâm",
+        "Trung tâm Dịch vụ, sự nghiệp công xã Suối Dầu",
+        "TRẠM Y TẾ XÃ DIÊN KHÁNH",
+        "Trạm y tế xã Diên Lâm",
+        "TRẠM Y TẾ XÃ DIÊN ĐIỀN",
+        "Bệnh viện Nhân dân Gia Định",
+        "TRƯỜNG TIỂU HỌC VÀ TRUNG HỌC CƠ SỞ ĐỊNH AN",
+        "Sở Khoa học và Công nghệ thành phố Đà Nẵng",
+        "Trung tâm Chuyển đổi số và Công nghệ chiến lược Đà Nẵng",
+        "Trung tâm Thông tin và giám sát, điều hành thông minh Đà Nẵng",
+        "Trường Cao đẳng Điện tử - Điện lạnh Hà Nội",
+        "Trường Mầm Non Tuy An Tây",
+        "Trường PTDTNT THCS và THPT Đồng Văn",
+        "Trường THCS và THPT Linh Hồ",
+        "Trường PTDTNT THCS&THPT Bắc Mê",
+        "Trường PTDT Nội trú THCS&THPT Vị Xuyên",
+        "Trường THCS và THPT Kim Ngọc",
+        "Trường THPT Xuân Giang",
+        "Trường THCS&THPT Hoàng Su Phì",
+        "Trường PTDT nội trú THCS và THPT Quang Bình",
+        "Trường THPT Việt Vinh",
+        "Trường THPT Tân Quang",
+        "Trường THPT Hùng An",
+        "Chi cục Hải quan khu vực VII",
+        "Trung tâm Đào tạo – Cung ứng lao động kỹ thuật",
+        "Chi cục Kiểm lâm An Giang",
+        "Trường Tiểu học và Trung học cơ sở Hiệp Thạnh",
+        "TRƯỜNG TIỂU HỌC CÁT TIẾN 1",
+        "CHI CỤC HẢI QUAN KHU VỰC XVI",
+        "TRƯỜNG CAO ĐẲNG KTCN VIỆT NAM- HÀN QUỐC",
+        "UBND PHƯỜNG BẮC CAM RANH (PHÒNG KINH TẾ, HẠ TẦNG VÀ ĐÔ THỊ PHƯỜNG BẮC CAM RANH)",
+        "Ủy ban Mặt trận Tổ quốc Việt Nam xã Đắk Wil",
+        "Sở Tài chính tỉnh Đắk Lắk",
+        "ỦY BAN NHÂN DÂN XÃ NAM CAM RANH",
+        "SỞ VĂN HÓA, THỂ THAO VÀ DU LỊCH THÀNH PHỐ ĐÀ NẴNG",
+        "BAN QUẢN LÝ DỰ ÁN ĐẦU TƯ XÂY DỰNG CÔNG TRÌNH GIAO THÔNG HẢI PHÒNG",
+        "TRƯỜNG TIỂU HỌC KIM ĐỒNG",
+        "TRƯỜNG TIỂU HỌC VÀ TRUNG HỌC CƠ SỞ CƯ DRĂM",
+        "Thanh tra Chính phủ",
+        "Trạm Y tế phường Cam Linh",
+        "Trường Tiểu học và Trung Học Cơ Sở Yang Mao",
+        "Văn Phòng Cục Sở hữu trí tuệ",
+        "Văn phòng đại diện Cục Sở hữu trí tuệ tại thành phố Hồ Chí Minh",
+        "Văn phòng đại diện Cục Sở hữu trí tuệ tại thành phố Đà Nẵng",
+        "Trường Tiểu học và Trung học cơ sở Huỳnh Thúc Kháng",
+        "Trường Tiểu học Đông Ninh Hòa",
+        "TRƯỜNG THCS ĐÔNG NINH HÒA",
+        "CHI CỤC HẢI QUAN KHU VỰC VI",
+        "Văn phòng HĐND&UBND phường Cam Linh",
+        "Trường Tiểu Học và Trung Học Cơ Sở Xuân Thịnh",
+        "Trường Tiểu Học và Trung Học Cơ Sở Lê Thánh Tông",
+        "Trạm Y Tế xã Suối Dầu",
+        "Trung tâm Giám định Y Khoa Khánh Hòa",
+        "BỆNH VIỆN PHỔI TINH TUYÊN QUANG",
+        "UBND xã Cư M’gar",
+        "TRẠM Y TẾ PHƯỜNG CAM RANH"
+      ],
+      "unitBreakdown": [],
+      "scoreStats": {
+        "count": 0,
+        "distribution": []
+      },
+      "questions": [
+        {
+          "title": "Câu 1: Quy định nào sau đây không đúng về chứng từ kế toán:",
+          "totalAnswers": 0,
+          "correctAnswer": "",
+          "correctCount": 0,
+          "correctPercent": 0,
+          "options": [
+            {
+              "label": "A. Các đơn vị kế toán bắt buộc phải sử dụng mẫu chứng từ kế toán quy định trong Thông tư số 107/2017/TT-BTC",
+              "count": 0,
+              "isCorrect": false
+            },
+            {
+              "label": "B. Chứng từ kế toán do đơn vị tự thiết kế phải phản ánh đúng bản chất của nghiệp vụ kinh tế, tài chính phát sinh, tuân thủ các nội dung quy định tại Luật Kế toán, phù hợp với thông tin cần ghi sổ kế toán và yêu cầu quản lý của đơn vị.",
+              "count": 0,
+              "isCorrect": false
+            },
+            {
+              "label": "C. Trường hợp đơn vị kế toán sử dụng các chứng từ kế toán in sẵn, thì phải thực hiện bảo quản cẩn thận, không được để hư hỏng, mục nát.",
+              "count": 0,
+              "isCorrect": false
+            },
+            {
+              "label": "D. Các đơn vị kế toán được tự thiết kế chứng từ kế toán của đơn vị để phản ánh các nghiệp vụ kinh tế, tài chính phát sinh phù hợp yêu cầu quản lý, đảm bảo đủ các thông tin phục vụ hạch toán kế toán, trừ trường hợp đã có quy định mẫu biểu chứng từ kế toán tại các văn bản pháp luật có liên quan.",
+              "count": 0,
+              "isCorrect": false
+            }
+          ],
+          "referenceNote": "",
+          "explanations": []
+        },
+        {
+          "title": "Câu 2: Theo quy định của Luật Kế toán, những người nào phải chịu trách nhiệm về nội dung của chứng từ kế toán:",
+          "totalAnswers": 0,
+          "correctAnswer": "",
+          "correctCount": 0,
+          "correctPercent": 0,
+          "options": [
+            {
+              "label": "A. Người lập chứng từ kế toán",
+              "count": 0,
+              "isCorrect": false
+            },
+            {
+              "label": "B. Người đại diện theo pháp luật của đơn vị kế toán",
+              "count": 0,
+              "isCorrect": false
+            },
+            {
+              "label": "C. Người lập, người duyệt và những người khác ký tên trên chứng từ kế toán.",
+              "count": 0,
+              "isCorrect": false
+            },
+            {
+              "label": "D. Kế toán trưởng ký tên trên chứng từ kế toán.",
+              "count": 0,
+              "isCorrect": false
+            }
+          ],
+          "referenceNote": "",
+          "explanations": []
+        },
+        {
+          "title": "Câu 3: Theo Luật Kế toán, chứng từ kế toán điện tử được coi là có giá trị pháp lý khi đáp ứng điều kiện nào sau đây?",
+          "totalAnswers": 0,
+          "correctAnswer": "",
+          "correctCount": 0,
+          "correctPercent": 0,
+          "options": [
+            {
+              "label": "A. Được in ra bản giấy và lưu trữ tại đơn vị kế toán.",
+              "count": 0,
+              "isCorrect": false
+            },
+            {
+              "label": "B. Có đầy đủ nội dung theo quy định và được ký bằng chữ ký điện tử hợp pháp theo pháp luật về giao dịch điện tử.",
+              "count": 0,
+              "isCorrect": false
+            },
+            {
+              "label": "C. Được cơ quan kiểm toán xác nhận tính hợp lệ.",
+              "count": 0,
+              "isCorrect": false
+            },
+            {
+              "label": "D. Có đóng dấu của đơn vị kế toán trên bản in.",
+              "count": 0,
+              "isCorrect": false
+            }
+          ],
+          "referenceNote": "",
+          "explanations": []
+        },
+        {
+          "title": "Câu 4: Theo quy định tại Luật Kế toán, tài liệu kế toán nào sau đây phải được lưu trữ tối thiểu 10 năm, trừ trường hợp pháp luật có quy định khác?",
+          "totalAnswers": 0,
+          "correctAnswer": "",
+          "correctCount": 0,
+          "correctPercent": 0,
+          "options": [
+            {
+              "label": "A. Tài liệu kế toán phục vụ quản lý, điều hành nội bộ và chứng từ không sử dụng trực tiếp để ghi sổ kế toán hoặc lập báo cáo tài chính",
+              "count": 0,
+              "isCorrect": false
+            },
+            {
+              "label": "B. Chứng từ kế toán sử dụng trực tiếp để ghi sổ kế toán và lập báo cáo tài chính; sổ kế toán; báo cáo tài chính năm",
+              "count": 0,
+              "isCorrect": false
+            },
+            {
+              "label": "C. Toàn bộ tài liệu kế toán phát sinh trong kỳ kế toán năm",
+              "count": 0,
+              "isCorrect": false
+            },
+            {
+              "label": "D. Tài liệu kế toán có tính sử liệu, có ý nghĩa quan trọng về kinh tế, an ninh, quốc phòng.",
+              "count": 0,
+              "isCorrect": false
+            }
+          ],
+          "referenceNote": "",
+          "explanations": []
+        },
+        {
+          "title": "Câu 5: Thời gian chỉnh lý quyết toán ngân sách nhà nước kết thúc vào thời điểm nào theo quy định hiện nay:",
+          "totalAnswers": 0,
+          "correctAnswer": "",
+          "correctCount": 0,
+          "correctPercent": 0,
+          "options": [
+            {
+              "label": "A. 25 tháng 01 năm sau",
+              "count": 0,
+              "isCorrect": false
+            },
+            {
+              "label": "B. 29 tháng 01 năm sau",
+              "count": 0,
+              "isCorrect": false
+            },
+            {
+              "label": "C. 31 tháng 01 năm sau",
+              "count": 0,
+              "isCorrect": false
+            },
+            {
+              "label": "D. 31 tháng 03 năm sau",
+              "count": 0,
+              "isCorrect": false
+            }
+          ],
+          "referenceNote": "",
+          "explanations": []
+        },
+        {
+          "title": "Câu 6: Đến hết thời gian chỉnh lý quyết toán, các khoản dự toán chi ngân sách nhà nước (bao gồm cả các khoản dự toán chưa phân bổ chi tiết ở cấp ngân sách, các khoản tạm ứng trong dự toán, số dư tài khoản tiền gửi các khoản ngân sách nhà nước cấp) chưa thực hiện được hoặc chưa chi hết, không được chuyển nguồn sang năm sau tiếp tục sử dụng, bao gồm:",
+          "totalAnswers": 0,
+          "correctAnswer": "",
+          "correctCount": 0,
+          "correctPercent": 0,
+          "options": [
+            {
+              "label": "A. Các khoản dự toán được Ủy ban nhân dân các cấp bổ sung sau ngày 30 tháng 9 năm thực hiện dự toán đã hết nhiệm vụ chi",
+              "count": 0,
+              "isCorrect": false
+            },
+            {
+              "label": "B. Nguồn thực hiện chính sách tiền lương, phụ cấp, trợ cấp và các khoản tính theo tiền lương;",
+              "count": 0,
+              "isCorrect": false
+            },
+            {
+              "label": "C. Kinh phí được giao tự chủ của các đơn vị sự nghiệp công lập và các cơ quan nhà nước",
+              "count": 0,
+              "isCorrect": false
+            },
+            {
+              "label": "D. Chi mua sắm hàng hóa, dịch vụ (bao gồm thuê hàng hóa, dịch vụ), sửa chữa, cải tạo, nâng cấp, mở rộng, xây dựng mới hạng mục công trình trong các dự án đã đầu tư xây dựng, đặt hàng, giao nhiệm vụ đã đầy đủ hồ sơ, đã ký hợp đồng hoặc đã hoàn thành đấu thầu theo quy định của pháp luật về đấu thầu trước ngày 31 tháng 12 năm thực hiện dự toán",
+              "count": 0,
+              "isCorrect": false
+            }
+          ],
+          "referenceNote": "",
+          "explanations": []
+        },
+        {
+          "title": "Câu 7: Quy định nào sau đây không đúng về Báo cáo quyết toán kinh phí hoạt động:",
+          "totalAnswers": 0,
+          "correctAnswer": "",
+          "correctCount": 0,
+          "correctPercent": 0,
+          "options": [
+            {
+              "label": "A. Số liệu quyết toán kinh phí ngân sách nhà nước của đơn vị trong năm ngân sách phải được đối chiếu, có xác nhận khớp đúng với số liệu của kho bạc nhà nước nơi giao dịch theo quy định",
+              "count": 0,
+              "isCorrect": false
+            },
+            {
+              "label": "B. Số liệu quyết toán kinh phí ngân sách nhà nước bao gồm kinh phí đơn vị đã thực nhận và thực sử dụng trong năm ngân sách, không bao gồm cả số liệu phát sinh trong thời gian chỉnh lý quyết toán theo quy định của pháp luật về ngân sách nhà nước",
+              "count": 0,
+              "isCorrect": false
+            },
+            {
+              "label": "C. Số kinh phí ngân sách nhà nước thực sử dụng trong năm ngân sách đề nghị quyết toán là số kinh phí đơn vị đã chi và được kho bạc nhà nước xác nhận hạch toán thực chi ngân sách nhà nước trong năm ngân sách theo quy định",
+              "count": 0,
+              "isCorrect": false
+            },
+            {
+              "label": "D. Việc lập báo cáo quyết toán kinh phí hoạt động phải bảo đảm trung thực, khách quan, đầy đủ, kịp thời, phản ánh đúng số kinh phí mà đơn vị đã thực nhận, thực sử dụng và dự toán được giao theo từng nguồn kinh phí trong năm",
+              "count": 0,
+              "isCorrect": false
+            }
+          ],
+          "referenceNote": "",
+          "explanations": []
+        },
+        {
+          "title": "Câu 8: Danh mục các Báo cáo tài chính đơn vị kế toán phải lập bao gồm:",
+          "totalAnswers": 0,
+          "correctAnswer": "",
+          "correctCount": 0,
+          "correctPercent": 0,
+          "options": [
+            {
+              "label": "A. Báo cáo quyết toán kinh phí hoạt động, Báo cáo chi tiết chi theo mục lục ngân sách, Thuyết minh báo cáo quyết toán",
+              "count": 0,
+              "isCorrect": false
+            },
+            {
+              "label": "B. Báo cáo tình hình tài chính, Báo cáo kết quả hoạt động, Báo cáo lưu chuyển tiền tệ, Thuyết minh báo cáo tài chính, Báo cáo về những thay đổi trong tài sản thuần",
+              "count": 0,
+              "isCorrect": false
+            },
+            {
+              "label": "C. Báo cáo tình hình tài chính, Báo cáo quyết toán kinh phí hoạt động, Báo cáo chi tiết chi theo mục lục ngân sách, Thuyết minh báo cáo quyết toán",
+              "count": 0,
+              "isCorrect": false
+            },
+            {
+              "label": "D. Báo cáo tình hình tài chính, Báo cáo kết quả hoạt động, Báo cáo lưu chuyển tiền tệ, Thuyết minh báo cáo tài chính, Báo cáo về những thay đổi trong tài sản thuần, Thuyết minh chi tiết số liệu tài sản kết cấu hạ tầng đơn vị được giao quản lý nhưng không trực tiếp khai thác, sử dụng (nếu được giao quản lý tài sản kết cấu hạ tầng)",
+              "count": 0,
+              "isCorrect": false
+            }
+          ],
+          "referenceNote": "",
+          "explanations": []
+        },
+        {
+          "title": "Câu 9: Khi xét duyệt quyết toán ngân sách nhà nước năm trong trường hợp đơn vị dự toán cấp I đồng thời là đơn vị sử dụng ngân sách thuộc UBND xã:",
+          "totalAnswers": 0,
+          "correctAnswer": "",
+          "correctCount": 0,
+          "correctPercent": 0,
+          "options": [
+            {
+              "label": "A. UBND xã thực hiện xét duyệt, ra thông báo xét duyệt quyết toán đối với đơn vị sử dụng ngân sách thuộc phạm vi quản lý.",
+              "count": 0,
+              "isCorrect": false
+            },
+            {
+              "label": "B. Cơ quan tài chính cấp xã ra thông báo xét duyệt quyết toán đối với các đơn vị dự toán cấp I đồng thời là đơn vị sử dụng ngân sách.",
+              "count": 0,
+              "isCorrect": false
+            },
+            {
+              "label": "C. Cơ quan tài chính cấp xã khi duyệt quyết toán ngân sách năm xét duyệt từng khoản thu, chi phát sinh tại đơn vị.",
+              "count": 0,
+              "isCorrect": false
+            },
+            {
+              "label": "D. Đơn vị lập báo cáo quyết toán gửi cơ quan tài chính cấp xã để kiểm tra về tính đầy đủ, khớp đúng giữa các số liệu quyết toán với xác nhận của Kho bạc Nhà nước. Thủ trưởng đơn vị chịu trách nhiệm về quyết toán ngân sách của đơn vị mình.",
+              "count": 0,
+              "isCorrect": false
+            }
+          ],
+          "referenceNote": "",
+          "explanations": []
+        },
+        {
+          "title": "Câu 10: Cơ quan nào có quyền tạm đình chỉ chi ngân sách của các cơ quan, tổ chức, đơn vị khi không chấp hành đúng chế độ báo cáo kế toán, quyết toán, báo cáo tài chính khác và chịu trách nhiệm về quyết định của mình:",
+          "totalAnswers": 0,
+          "correctAnswer": "",
+          "correctCount": 0,
+          "correctPercent": 0,
+          "options": [
+            {
+              "label": "A. Cơ quan cấp trên",
+              "count": 0,
+              "isCorrect": false
+            },
+            {
+              "label": "B. Cơ quan tài chính",
+              "count": 0,
+              "isCorrect": false
+            },
+            {
+              "label": "C. Kho bạc nhà nước",
+              "count": 0,
+              "isCorrect": false
+            },
+            {
+              "label": "D. Thanh tra tài chính",
+              "count": 0,
+              "isCorrect": false
+            }
+          ],
+          "referenceNote": "",
+          "explanations": []
+        }
+      ],
+      "leaderboard": [],
+      "quizSummary": {
+        "averageCorrectPercent": 0,
+        "correctDistribution": []
+      },
+      "explanationStats": {
+        "count": 0,
+        "rate": 0
+      }
+    },
+    {
+      "id": 2,
+      "name": "Phiên 2",
+      "description": "Công tác bàn giao khi thực hiện sáp nhập",
+      "kind": "true_false",
+      "typeLabel": "5 câu Đúng/Sai và giải thích",
+      "phase": "NOT_STARTED",
+      "totalResponses": 0,
+      "currentResponses": 0,
+      "participatingUnits": 0,
+      "totalUnits": 78,
+      "missingUnits": [
+        "TRUNG TÂM PHÁT TRIỂN HẠ TẦNG TRỰC THUỘC BAN QUẢN LÝ KHU KINH TẾ MỞ CHU LAI THÀNH PHỐ ĐÀ NẴNG",
+        "Trung Tâm Khoa học công nghệ và đổi mới sáng tạo tỉnh Lào Cai",
+        "Bệnh viện Hữu nghị Việt Đức",
+        "TRUNG TÂM QUẢN LÝ NHÀ TỈNH LÂM ĐỒNG",
+        "TRUNG TÂM VĂN HÓA TỈNH CÀ MAU",
+        "Trường Tiểu học và Trung học cơ sở Lê Duẩn",
+        "Trường Trung học cơ sở Châu Kim Huệ",
+        "Trường Trung học phổ thông Võ Thị Sáu",
+        "Trường Tiểu học và Trung học cơ sở Tuy An Bắc",
+        "Trường Tiểu học Tuy An Bắc",
+        "Trường Mầm non Tuy An Bắc",
+        "Trường Tiểu học Ô Loan",
+        "Trường Tiểu học và Trung học cơ sở Trần Rịa",
+        "Trường Mầm non Ô Loan",
+        "Trường Tiểu Học An Hòa",
+        "Phòng Kinh tế đặc khu Côn Đảo",
+        "Trường Tiểu học Nguyễn Thị Loan",
+        "Trung tâm đăng kiểm xe cơ giới",
+        "TRƯỜNG MẪU GIÁO HOA CÚC",
+        "TRƯỜNG MẪU GIÁO HOA BAN",
+        "TRẠM Y TẾ XÃ CAM HIỆP",
+        "TRƯỜNG THCS VÀ THPT BÁC ÁI",
+        "Trạm Y tế xã Cam Lâm",
+        "Trung tâm Dịch vụ, sự nghiệp công xã Suối Dầu",
+        "TRẠM Y TẾ XÃ DIÊN KHÁNH",
+        "Trạm y tế xã Diên Lâm",
+        "TRẠM Y TẾ XÃ DIÊN ĐIỀN",
+        "Bệnh viện Nhân dân Gia Định",
+        "TRƯỜNG TIỂU HỌC VÀ TRUNG HỌC CƠ SỞ ĐỊNH AN",
+        "Sở Khoa học và Công nghệ thành phố Đà Nẵng",
+        "Trung tâm Chuyển đổi số và Công nghệ chiến lược Đà Nẵng",
+        "Trung tâm Thông tin và giám sát, điều hành thông minh Đà Nẵng",
+        "Trường Cao đẳng Điện tử - Điện lạnh Hà Nội",
+        "Trường Mầm Non Tuy An Tây",
+        "Trường PTDTNT THCS và THPT Đồng Văn",
+        "Trường THCS và THPT Linh Hồ",
+        "Trường PTDTNT THCS&THPT Bắc Mê",
+        "Trường PTDT Nội trú THCS&THPT Vị Xuyên",
+        "Trường THCS và THPT Kim Ngọc",
+        "Trường THPT Xuân Giang",
+        "Trường THCS&THPT Hoàng Su Phì",
+        "Trường PTDT nội trú THCS và THPT Quang Bình",
+        "Trường THPT Việt Vinh",
+        "Trường THPT Tân Quang",
+        "Trường THPT Hùng An",
+        "Chi cục Hải quan khu vực VII",
+        "Trung tâm Đào tạo – Cung ứng lao động kỹ thuật",
+        "Chi cục Kiểm lâm An Giang",
+        "Trường Tiểu học và Trung học cơ sở Hiệp Thạnh",
+        "TRƯỜNG TIỂU HỌC CÁT TIẾN 1",
+        "CHI CỤC HẢI QUAN KHU VỰC XVI",
+        "TRƯỜNG CAO ĐẲNG KTCN VIỆT NAM- HÀN QUỐC",
+        "UBND PHƯỜNG BẮC CAM RANH (PHÒNG KINH TẾ, HẠ TẦNG VÀ ĐÔ THỊ PHƯỜNG BẮC CAM RANH)",
+        "Ủy ban Mặt trận Tổ quốc Việt Nam xã Đắk Wil",
+        "Sở Tài chính tỉnh Đắk Lắk",
+        "ỦY BAN NHÂN DÂN XÃ NAM CAM RANH",
+        "SỞ VĂN HÓA, THỂ THAO VÀ DU LỊCH THÀNH PHỐ ĐÀ NẴNG",
+        "BAN QUẢN LÝ DỰ ÁN ĐẦU TƯ XÂY DỰNG CÔNG TRÌNH GIAO THÔNG HẢI PHÒNG",
+        "TRƯỜNG TIỂU HỌC KIM ĐỒNG",
+        "TRƯỜNG TIỂU HỌC VÀ TRUNG HỌC CƠ SỞ CƯ DRĂM",
+        "Thanh tra Chính phủ",
+        "Trạm Y tế phường Cam Linh",
+        "Trường Tiểu học và Trung Học Cơ Sở Yang Mao",
+        "Văn Phòng Cục Sở hữu trí tuệ",
+        "Văn phòng đại diện Cục Sở hữu trí tuệ tại thành phố Hồ Chí Minh",
+        "Văn phòng đại diện Cục Sở hữu trí tuệ tại thành phố Đà Nẵng",
+        "Trường Tiểu học và Trung học cơ sở Huỳnh Thúc Kháng",
+        "Trường Tiểu học Đông Ninh Hòa",
+        "TRƯỜNG THCS ĐÔNG NINH HÒA",
+        "CHI CỤC HẢI QUAN KHU VỰC VI",
+        "Văn phòng HĐND&UBND phường Cam Linh",
+        "Trường Tiểu Học và Trung Học Cơ Sở Xuân Thịnh",
+        "Trường Tiểu Học và Trung Học Cơ Sở Lê Thánh Tông",
+        "Trạm Y Tế xã Suối Dầu",
+        "Trung tâm Giám định Y Khoa Khánh Hòa",
+        "BỆNH VIỆN PHỔI TINH TUYÊN QUANG",
+        "UBND xã Cư M’gar",
+        "TRẠM Y TẾ PHƯỜNG CAM RANH"
+      ],
+      "unitBreakdown": [],
+      "scoreStats": {
+        "count": 0,
+        "distribution": []
+      },
+      "questions": [
+        {
+          "title": "Câu 1: Đơn vị cũ phải bàn giao đầy đủ các khoản nợ phải trả cho đơn vị mới. Đơn vị cũ phải đối chiếu toàn bộ số dư các khoản phải trả hiện có với các bên liên quan chi tiết theo từng đối tượng thanh toán, lập Bảng xác nhận công nợ có xác nhận của đối tượng thanh toán, sao lục lại toàn bộ hồ sơ có liên quan để bàn giao cho đơn vị mới có căn cứ tiếp tục xử lý sau khi nhận bàn giao. Đơn vị mới có trách nhiệm thanh toán đầy đủ các khoản nợ phải trả này.",
+          "totalAnswers": 0,
+          "correctAnswer": "",
+          "correctCount": 0,
+          "correctPercent": 0,
+          "options": [
+            {
+              "label": "Đúng",
+              "count": 0,
+              "isCorrect": false
+            },
+            {
+              "label": "Sai",
+              "count": 0,
+              "isCorrect": false
+            }
+          ],
+          "referenceNote": "",
+          "explanations": []
+        },
+        {
+          "title": "Câu 2: Đơn vị cũ khi kết thúc chỉ lập Bảng cân đối số phát sinh đến hết ngày trước ngày quyết định sắp xếp. Đơn vị mới có trách nhiệm lập Báo cáo tài chính năm và Báo cáo quyết toán kinh phí hoạt động năm bao gồm số liệu của đơn vị cũ và đơn vị mới.",
+          "totalAnswers": 0,
+          "correctAnswer": "",
+          "correctCount": 0,
+          "correctPercent": 0,
+          "options": [
+            {
+              "label": "Đúng",
+              "count": 0,
+              "isCorrect": false
+            },
+            {
+              "label": "Sai",
+              "count": 0,
+              "isCorrect": false
+            }
+          ],
+          "referenceNote": "",
+          "explanations": []
+        },
+        {
+          "title": "Câu 3: Đơn vị cũ khi kết thúc bàn giao số dư các Quỹ đã trích lập chưa sử dụng phải đảm bảo số dư tiền (tiền mặt, tiền gửi ngân hàng kho bạc, tài khoản dự toán còn dư) tại ngày khóa sổ phải bao gồm tối thiểu các quỹ đã trích lập. Đối với đơn vị sự nghiệp công lập nhóm 4 (đơn vị sự nghiệp công do Nhà nước bảo đảm chi thường xuyên) theo quy định không trích lập Qũy nên khi nhận bàn giao, đơn vị mới hạch toán vào khoản thu của đơn vị mới.",
+          "totalAnswers": 0,
+          "correctAnswer": "",
+          "correctCount": 0,
+          "correctPercent": 0,
+          "options": [
+            {
+              "label": "Đúng",
+              "count": 0,
+              "isCorrect": false
+            },
+            {
+              "label": "Sai",
+              "count": 0,
+              "isCorrect": false
+            }
+          ],
+          "referenceNote": "",
+          "explanations": []
+        },
+        {
+          "title": "Câu 4: Đơn vị cũ khi kết thúc bàn giao tài sản cố định, công cụ dụng cụ, phải bàn giao hồ sơ tài liệu bao gồm:\n- Chứng từ bàn giao/Phiếu bàn giao (Phiếu bàn giao phải có đầy đủ thông tin, số liệu về loại, nhóm tài sản, nguyên giá, giá trị hao mòn lũy kế, giá trị còn lại và các thông tin khác có liên quan).\n- Bản sao Sổ theo dõi TSCĐ và công cụ, dụng cụ tại nơi sử dụng theo quy định của Chế độ kế toán hành chính, sự nghiệp.",
+          "totalAnswers": 0,
+          "correctAnswer": "",
+          "correctCount": 0,
+          "correctPercent": 0,
+          "options": [
+            {
+              "label": "Đúng",
+              "count": 0,
+              "isCorrect": false
+            },
+            {
+              "label": "Sai",
+              "count": 0,
+              "isCorrect": false
+            }
+          ],
+          "referenceNote": "",
+          "explanations": []
+        },
+        {
+          "title": "Câu 5: Đơn vị cũ lập hồ sơ bàn giao và thực hiện bàn giao tài sản, kinh phí, nguồn lực; hồ sơ, tài liệu kế toán sang các đơn vị mới. Biên bản bàn giao số liệu kế toán là thành phần bắt buộc trong hồ sơ bàn giao. Toàn bộ số dư các tài khoản trên sổ kế toán phải được bàn giao hết cho đơn vị mới. Đơn vị mới hạch toán nhận số liệu vào số dư đầu kỳ trên sổ kế toán từ ngày chính thức đi vào hoạt động theo quy định tại Thông tư số 24/2024/TT-BTC.",
+          "totalAnswers": 0,
+          "correctAnswer": "",
+          "correctCount": 0,
+          "correctPercent": 0,
+          "options": [
+            {
+              "label": "Đúng",
+              "count": 0,
+              "isCorrect": false
+            },
+            {
+              "label": "Sai",
+              "count": 0,
+              "isCorrect": false
+            }
+          ],
+          "referenceNote": "",
+          "explanations": []
+        }
+      ],
+      "leaderboard": [],
+      "quizSummary": {
+        "averageCorrectPercent": 0,
+        "correctDistribution": []
+      },
+      "explanationStats": {
+        "count": 0,
+        "rate": 0
+      }
+    }
+  ]
+}
