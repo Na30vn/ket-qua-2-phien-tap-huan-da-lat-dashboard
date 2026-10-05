@@ -238,7 +238,7 @@ h1 {
 .bar-fill.red { background: linear-gradient(90deg, #b9472b, var(--red)); }
 .bar-fill.correct { background: linear-gradient(90deg, #16835b, #50b788); }
 
-.column-chart { display: flex; align-items: flex-end; justify-content: space-around; gap: 8px; min-height: 270px; padding: 10px 4px 0; border-bottom: 2px solid #c5d3e1; }
+.column-chart { display: flex; align-items: flex-end; justify-content: space-around; gap: 8px; min-height: 270px; padding: 10px 4px 0; border-bottom: 2px solid #c5d3e1; overflow-x: auto; }
 .column-item { display: grid; grid-template-rows: 25px 190px 32px; align-items: end; justify-items: center; flex: 1; min-width: 42px; }
 .column-value { color: #073966; font-size: 14px; font-weight: 900; }
 .column-track { display: flex; align-items: flex-end; width: min(54px,75%); height: 185px; }
