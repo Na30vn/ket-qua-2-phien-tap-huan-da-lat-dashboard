@@ -216,7 +216,13 @@
       const separator = dataUrl.includes("?") ? "&" : "?";
       const force = !fakeMode && forceRefresh === true ? "&refresh=1" : "";
       const requestUrl = `${dataUrl}${separator}_=${Date.now()}${force}`;
-      try {
+      if (!fakeMode && /^https:\/\/script\.google\.com\/macros\/s\//.test(dataUrl)) {
+        try {
+          payload = await fetchAppsScriptFrame(requestUrl);
+        } catch (firstError) {
+          payload = await fetchAppsScriptFrame(requestUrl);
+        }
+      } else try {
         const response = await fetchWithTimeout(requestUrl);
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         payload = await response.json();
@@ -235,18 +241,49 @@
       if (!fakeMode && lastLivePayload) {
         payload = lastLivePayload;
         usingFallbackData = false;
-        setStatus("error", "Mất kết nối tạm thời · đang hiển thị dữ liệu gần nhất");
+        setStatus("error", "Chưa cập nhật được · đang hiển thị dữ liệu gần nhất");
       } else {
         const response = await fetchWithTimeout(`${config.demoDataUrl || "data/demo.json"}?_=${Date.now()}`, 8000);
         payload = await response.json();
         usingFallbackData = !fakeMode;
-        setStatus(config.apiUrl ? "error" : "demo", config.apiUrl ? "Không kết nối được dữ liệu" : "Chế độ xem trước");
+        setStatus(config.apiUrl ? "error" : "demo", config.apiUrl ? "Chưa tải được dữ liệu · bấm Cập nhật để thử lại" : "Chế độ xem trước");
       }
     } finally {
       isLoading = false;
     }
     applyPendingControlStates();
     render();
+  }
+
+  function fetchAppsScriptFrame(url, timeoutMs = 35000) {
+    return new Promise((resolve, reject) => {
+      const channel = `dl_${Date.now()}_${Math.random().toString(36).slice(2)}`;
+      const frame = document.createElement("iframe");
+      frame.hidden = true;
+      frame.setAttribute("aria-hidden", "true");
+      frame.title = "Dữ liệu Dashboard Đà Lạt";
+      let done = false;
+      const finish = (error, data) => {
+        if (done) return;
+        done = true;
+        clearTimeout(timerId);
+        window.removeEventListener("message", receive);
+        frame.remove();
+        if (error) reject(error); else resolve(data);
+      };
+      const receive = event => {
+        if (event.origin !== "https://script.google.com" && !/^https:\/\/[a-z0-9-]+\.googleusercontent\.com$/.test(event.origin)) return;
+        const message = event.data;
+        if (message?.type !== "dl-public-data" || message.channel !== channel) return;
+        if (!Array.isArray(message.data?.sessions)) return finish(new Error("DATA_INVALID"));
+        finish(null, message.data);
+      };
+      const timerId = setTimeout(() => finish(new Error("APPS_SCRIPT_TIMEOUT")), timeoutMs);
+      window.addEventListener("message", receive);
+      frame.onerror = () => finish(new Error("APPS_SCRIPT_FAILED"));
+      frame.src = `${url}${url.includes("?") ? "&" : "?"}bridge=1&channel=${encodeURIComponent(channel)}&origin=${encodeURIComponent(window.location.origin)}`;
+      document.body.appendChild(frame);
+    });
   }
 
   async function fetchWithTimeout(url, timeoutMs = 12000) {
