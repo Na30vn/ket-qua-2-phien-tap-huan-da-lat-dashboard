@@ -59,6 +59,7 @@
   let lastLivePayload = null;
   let countdownExpired = false;
   let isLoading = false;
+  let queuedForceRefresh = false;
   let usingFallbackData = false;
   const detailStates = new Map();
   const scrollStates = new Map();
@@ -206,7 +207,10 @@
   }
 
   async function loadData(forceRefresh = false) {
-    if (isLoading) return;
+    if (isLoading) {
+      queuedForceRefresh = queuedForceRefresh || forceRefresh === true;
+      return;
+    }
     const requestStartedAt = Date.now();
     isLoading = true;
     if (!payload) setStatus("loading", "Đang tải dữ liệu…");
@@ -253,6 +257,10 @@
     }
     applyPendingControlStates();
     render();
+    if (queuedForceRefresh) {
+      queuedForceRefresh = false;
+      setTimeout(() => loadData(true), 0);
+    }
   }
 
   function fetchAppsScriptFrame(url, timeoutMs = 35000) {
@@ -320,7 +328,7 @@
   }
 
   function applyPendingControlStates() {
-    if (!usingFallbackData || !payload?.sessions) return;
+    if (!payload?.sessions) return;
     controlSessionStates.forEach((state, id) => {
       const session = payload.sessions.find(item => Number(item.id) === Number(id));
       if (session) Object.assign(session, state);
@@ -1308,7 +1316,10 @@
     if (event.data?.type !== "dashboard-session-updated") return;
     pendingSessionActions.delete(Number(event.data.sessionId));
     closeControlPanel();
+    const controlSnapshot = event.data.sessionData && Number(event.data.sessionData.id) === Number(event.data.sessionId)
+      ? event.data.sessionData : {};
     controlSessionStates.set(Number(event.data.sessionId), {
+      ...controlSnapshot,
       _receivedAt: Date.now(),
       phase: event.data.phase,
       timerStartedAt: event.data.timerStartedAt || null,
@@ -1321,7 +1332,7 @@
       render();
       updateCountdowns();
     }
-    setTimeout(() => loadData(false), 700);
+    setTimeout(() => loadData(true), 700);
   });
   loadData();
   if (Number(config.refreshSeconds) > 0) timer = setInterval(() => { if (!document.hidden) loadData(false); }, Number(config.refreshSeconds) * 1000);
